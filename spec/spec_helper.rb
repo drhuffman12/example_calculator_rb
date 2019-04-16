@@ -1,5 +1,7 @@
 require "bundler/setup"
-require "example_calculator_rb"
+require 'simplecov'
+
+require "example_calculator"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
