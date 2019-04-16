@@ -1,4 +1,6 @@
 require "bundler/setup"
+require 'simplecov'
+
 require "example_calculator_rb"
 
 RSpec.configure do |config|
