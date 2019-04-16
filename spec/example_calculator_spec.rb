@@ -18,4 +18,9 @@ RSpec.describe ExampleCalculator do
   it 'eight(divided_by(two)) # must return 4' do
     expect(eight(divided_by(two))).to eq(4)
   end
+
+  it 'calculation with an invalid operation symbol raises' do
+    op_with_right_value = { op: :something_invalid, value: two }
+    expect { calculation(three, op_with_right_value) }.to raise_error(ExampleCalculator::Error, /something_invalid/)
+  end
 end
