@@ -1,6 +1,6 @@
-RSpec.describe ExampleCalculatorRb do
+RSpec.describe ExampleCalculator do
   it "has a version number" do
-    expect(ExampleCalculatorRb::VERSION).not_to be nil
+    expect(ExampleCalculator::VERSION).not_to be nil
   end
 
   it "does something useful" do

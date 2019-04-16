@@ -1,6 +1,6 @@
-require "example_calculator_rb/version"
+require "example_calculator/version"
 
-module ExampleCalculatorRb
+module ExampleCalculator
   class Error < StandardError; end
   # Your code goes here...
 end
