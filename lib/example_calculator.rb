@@ -76,7 +76,7 @@ def calculation(left_value, op_with_right_value = nil)
     when :divided_by
       left_value / right_value
     else
-      raise ExampleCalculator::Error.new("Unsupported Operation '#{op}'")
+      raise ExampleCalculator::Error, "Unsupported Operation '#{op}'"
     end
   else
     left_value

@@ -19,8 +19,12 @@ RSpec.describe ExampleCalculator do
     expect(eight(divided_by(two))).to eq(4)
   end
 
+  it 'seven(minus(four)) # must return 3' do
+    expect(seven(minus(four))).to eq(3)
+  end
+
   it 'calculation with an invalid operation symbol raises' do
     op_with_right_value = { op: :something_invalid, value: two }
-    expect { calculation(three, op_with_right_value) }.to raise_error(ExampleCalculator::Error, /something_invalid/)
+    expect { calculation(zero, op_with_right_value) }.to raise_error(ExampleCalculator::Error, /something_invalid/)
   end
 end
