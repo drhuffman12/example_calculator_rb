@@ -7,19 +7,19 @@ end
 
 # op and right hand sides
 def plus(value)
-  {op: :plus, value: value}
+  { op: :plus, value: value }
 end
 
 def minus(value)
-  {op: :minus, value: value}
+  { op: :minus, value: value }
 end
 
 def times(value)
-  {op: :times, value: value}
+  { op: :times, value: value }
 end
 
 def divided_by(value)
-  {op: :divided_by, value: value}
+  { op: :divided_by, value: value }
 end
 
 # left hand side with optional right hand side
@@ -78,9 +78,8 @@ def calculation(left_value, op_with_right_value = nil)
       left_value / right_value
     else
       raise "Unsupported Operation '#{op}'"
-    end      
+    end
   else
     left_value
   end
 end
-
